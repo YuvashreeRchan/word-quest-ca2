@@ -8,6 +8,6 @@ Word Quest, a game inspired by the classic word guessing game. The player is giv
 This project is built using HTML, CSS AND JavaScript.
 
 FEATURES:
-Mobile responsive
-Guess words within Time limit to score points
-Score points will be displayed at the end of the game.
+1. Mobile responsive
+2. Guess words within Time limit to score points
+3. Score points will be displayed at the end of the game.
