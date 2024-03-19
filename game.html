@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Word Quest</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="TopBox">
+        <div class="scoreboard"><span id="score">Score 0</span></div>
+        <div class="roundsCompleted">
+            <div class="roundCircle" id="word1">1</div>
+            <div class="roundCircle" id="word2">2</div>
+            <div class="roundCircle" id="word3">3</div>
+            <div class="roundCircle" id="word4">4</div>
+            <div class="roundCircle" id="word5">5</div>
+        </div>
+        <div class="timer"><span id="timer">Time 60</span></div>
+    </div>
+    <div class="container">
+        <h1>Word Quest Game</h1>
+        <div id="roundInfo">Round: <span id="currentRound">1</span> / 5</div>
+        <div id="gameBox">
+            <div id="wordDisplay">-----</div>
+            <div id="hint">Hint: Some text here</div>
+            <div id="guessInfo">Guesses Left:<span id="guessesLeft">3</span><br>Letters tried:<span id="lettersTried"></span></div>
+            <div>
+                <label for="guessInput">Enter a letter:</label>
+                <input type="text" id="guessInput">
+                <button onclick="checkGuess()">Submit</button>
+            </div>
+            <div id="correctWordMessage" style="display: none;">You guessed it!! Right</div>
+        </div>
+    </div>
+
+    <audio id="StartGameSound" src="assets/startgame.wav"></audio>
+    <audio id="correctSound" src="assets/achievement-bell.wav"></audio>
+    <audio id="incorrectSound" src="assets/wrong -buzzer.mp3"></audio>
+    <audio id="nextRoundSound" src="assets/level-up-bonus-sequence.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>

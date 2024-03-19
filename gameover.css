@@ -1,0 +1,101 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #97d7e7;
+    color: #1c297a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #f0b9a9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 20px solid #d37154;
+    
+}
+
+h1 {
+    color: #bd481e;
+    font-size: 50px;
+}
+
+.score{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#finalScore{
+    font-weight: bolder;
+}
+.message {
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+button {
+    background-color:  #71d6ef;
+    color: #f1f3f8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8cc75f;
+}
+
+footer{
+    color:  #1c297a;
+    display: flex;
+    justify-content: center;
+}
+
+#confettiIcon {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/4158/4158206.png'); 
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    opacity: 0;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 60%;
+        border: 10px solid #d37154;
+    
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 10px 1dvb;
+        font-size: 20px;
+    }
+
+    #confettiIcon{
+        width: 70px;
+        height:70px;
+        top: 65%;
+        left: 40%;
+        opacity: 0;
+    }
+}

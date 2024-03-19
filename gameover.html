@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="gameover.css">
+</head>
+<body>
+
+    <audio id="winningCheers" src="assets/short-crowd-cheer.mp3"></audio>
+    <audio id="losingSoundEffect" src="assets/negative-answer-lose.wav"></audio>
+    <audio id="clickSound" src="assets/game-click.wav"></audio>
+    <div id="confettiIcon"></div>
+    <div class="container">
+        <h1>Game Over</h1>
+        <p class="score">Final Score: <span id="finalScore"></span></p>
+        <p class="message" id="gameoverMessage"></p>
+    
+        <button id="playAgainButton">Play Again</button>
+    </div>
+    <footer>
+        <p>This game is developed  by Yuvashree R</p>
+    </footer>
+    <script src="gameover.js"></script>
+</body>
+</html>

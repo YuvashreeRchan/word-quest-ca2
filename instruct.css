@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5df56;
+    color: #f7f8fc;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 30px solid #094354;
+    padding: 20px;
+    background-color: #64b8cb;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(108, 115, 0, 0.1);
+}
+
+.salute{
+    color: #094354;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    color: #fff260;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fdf559;
+}
+#understoodCheckbox {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #e64745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    color: #deebef;
+    background-color: #094354; 
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: calc(100% - 50px); 
+        margin: 10px auto; 
+        border-width: 10px; 
+        padding: 10px; 
+        border-radius: 20px; 
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    ol{
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%; 
+        color: #094354;
+        background-color:  #fdf559;
+    }
+
+}
