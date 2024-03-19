@@ -1,7 +1,7 @@
-let words = ['banana','strawberry', 'pineapple', 'elephant','rhino','lion','mirror','chair','glasses','phone', 'guitar',"ocean","moon",];
-let hints = ['Yellow fruit',"Red fruit with seeds on the outside", 'Fruit with a spiky exterior','Animal with a trunk'
-    , 'Animal with Large horn','King of the jungle','Reflective surface','Furniture','Vision tool', 'Communication device','Musical instrument with strings','Vast body of saltwater','Natural satellite of Earth'];
-
+let words = ['banana','strawberry','rhino','lion','mirror','pineapple', 'elephant',"ocean",'chair','glasses','phone', 'guitar',"moon",];
+let hints = ['Sweet, Yellow fruit',"Red fruit with seeds outside",'Animal with Large horn','King of the jungle','Reflection of youself',
+'Fruit with a spiky exterior','Huge Animal and grey','Natural satellite of Earth','Furniture to sit','Helps to see things', 'Communication device',
+'Musical instrument with strings','Vast body of saltwater'];
 
 let currentWordIndex = Math.floor(Math.random() * words.length); 
 let currentWord = words[currentWordIndex];
@@ -10,10 +10,11 @@ let score = 0;
 let timer = 60;
 let countdownInterval;
 let currentRound = 1; 
-let guessesLeft = 3; 
-let lettersTried = '';
 
 updateRoundCircles()
+
+let guessesLeft = 3; 
+let lettersTried = '';
 
 function updateGuessInfo() {
     document.getElementById('guessesLeft').textContent = guessesLeft;
@@ -38,10 +39,11 @@ function updateTimer() {
     document.getElementById('timer').textContent = `Time ${timer}`;
     if (timer === 0) {
         clearInterval(countdownInterval); 
-        alert('Time is up! Moving to the next word.');
+        alert('Time is up! Moving to next word.');
         nextWord();
     }
 }
+
 function updateRoundCircles() {
     for (let i = 1; i <= currentRound; i++) {
         let roundCircle = document.getElementById(`word${i}`);
@@ -83,7 +85,7 @@ function checkGuess() {
         lettersTried= lettersTried + guess + " ";
         updateGuessInfo();
         document.getElementById('incorrectSound').play();
-        alert('Incorrect guess!');
+        alert('Oops, Incorrect guess!');
         if (guessesLeft === 0) {
             
             nextWord()
@@ -93,7 +95,6 @@ function checkGuess() {
 }
 
 function nextWord() {
-    // document.getElementById('correctWordMessage').style.display = 'none';
     document.getElementById('nextRoundSound').play();
     if (currentRound < 5) {
         currentRound++;

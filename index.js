@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = `instruct.html?nickname=${playerNickname}`;
         }
         else {
-            alert("Please enter your name and nickname to start the game.");
+            alert("Enter your name to start the game.");
         }
     }
 
