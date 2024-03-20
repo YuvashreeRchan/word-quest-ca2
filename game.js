@@ -1,4 +1,4 @@
-let words = ['banana','strawberry','rhino','lion','mirror','pineapple', 'elephant',"ocean",'chair','glasses','phone', 'guitar',"moon",];
+let words = ['banana','strawberry','rhino','lion','mirror','pineapple', 'elephant',"moon",'chair','glasses','phone', 'guitar',"ocean",];
 let hints = ['Sweet, Yellow fruit',"Red fruit with seeds outside",'Animal with Large horn','King of the jungle','Reflection of youself',
 'Fruit with a spiky exterior','Huge Animal and grey','Natural satellite of Earth','Furniture to sit','Helps to see things', 'Communication device',
 'Musical instrument with strings','Vast body of saltwater'];
